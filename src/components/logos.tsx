@@ -1,6 +1,6 @@
-export function TSLogo() {
+/*export function TSLogo() {
 	return <img className="h-6 2xl:h-10 rounded-md" src="./lang/ts.svg" />
-}
+}*/
 
 export function JSLogo() {
 	return <img className="h-6 2xl:h-10 rounded-md" src="./lang/js.svg" />
