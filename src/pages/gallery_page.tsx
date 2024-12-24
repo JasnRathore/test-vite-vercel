@@ -3,7 +3,7 @@ import { ThemeContext } from "../context";
 import { NavLink } from "react-router";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import ProjectItem from "../components/gallery_item";
-import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, PYLogo, ReactLogo, RSLogo, TailwindLogo, TSLogo } from "../components/logos";
+import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, PYLogo, ReactLogo, RSLogo, TailwindLogo } from "../components/logos";
 
 export function GalleryPage() {
 	const theme = useContext(ThemeContext); 
