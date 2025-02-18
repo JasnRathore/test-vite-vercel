@@ -22,7 +22,7 @@ export default function ProjectItem({
 				<span className="tracking-[3px] text-md lg:text-xl 2xl:text-2xl text-heading font-bold">
 					{ title }
 				</span>		
-				<div className="hidden md:flex flex-row gap-2">
+				<div className="hidden md:flex flex-row gap-2 items-center">
 						 { children }
 				</div>
 			</div>

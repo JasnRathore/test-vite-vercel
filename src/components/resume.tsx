@@ -6,7 +6,7 @@ export default function Resume() {
 			<span className="tracking-[3px] text-2xl text-heading font-bold">
 				RESUME 
 			</span>
-			<a href="JASN_RATHORE_RESUME.pdf" download={true}>
+			<a href="JASN_RATHORE_RESUME_2025.pdf" download={true}>
 				<DownloadIcon className="size-10 2xl:size-14"/>
 			</a>
 		</div>

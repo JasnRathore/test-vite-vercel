@@ -5,6 +5,9 @@
 export function JSLogo() {
 	return <img className="h-6 2xl:h-10 rounded-md" src="./lang/js.svg" />
 }
+export function TSLogo() {
+	return <img className="h-6 2xl:h-10 rounded-md" src="./lang/ts.svg" />
+}
 
 export function PYLogo() {
 	return <img className="h-6 2xl:h-10 rounded-md" src="./lang/py.svg" />
@@ -25,9 +28,19 @@ export function GOLogo() {
 export function CPPLogo() {
 	return <img className="h-6 2xl:h-10 rounded-md "  src="./lang/cpp.svg" />
 }
+export function PowerShellLogo() {
+	return <img className="w-6 2xl:h-10 rounded-md" src="./lang/powershell.svg" />
+}
+
+export function SqliteLogo() {
+	return <img className="w-10 2xl:h-10 rounded-md" src="./lang/sqlite.svg" />
+}
 
 export function NEXTJSLogo() {
 	return <img className="h-6 2xl:h-10 dark:invert" src="./tech/next-js.svg" />
+}
+export function SupabaseLogo() {
+	return <img className="h-6 2xl:h-10 dark:invert" src="./tech/supabase.svg" />
 }
 
 export function ReactLogo() {
@@ -49,4 +62,5 @@ export function FigmaLogo() {
 	return <img className="h-6 " src="./tech/Figma.svg" />
 	
 }
+
 

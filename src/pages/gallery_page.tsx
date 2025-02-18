@@ -3,7 +3,7 @@ import { ThemeContext } from "../context";
 import { NavLink } from "react-router";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import ProjectItem from "../components/gallery_item";
-import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, PYLogo, ReactLogo, RSLogo, TailwindLogo } from "../components/logos";
+import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, NEXTJSLogo, PowerShellLogo, PYLogo, ReactLogo, RSLogo, SqliteLogo, SupabaseLogo, TailwindLogo, TSLogo } from "../components/logos";
 
 export function GalleryPage() {
 	const theme = useContext(ThemeContext); 
@@ -25,7 +25,22 @@ export function GalleryPage() {
 			
 			<div className="flex flex-col gap-4 2xl:gap-6 ">
 				
+				<ProjectItem title="GFG Club Site" link="https://gfgbvdoet.vercel.app/" 
+					description="Our Clubs website for keeping up with events, getting to know the team or looking at memories"
+					>
+					<TSLogo />
+					<NEXTJSLogo />
+					<SupabaseLogo/>
+					<TailwindLogo/>
+				</ProjectItem>
 				
+				<ProjectItem title="Project Aliaser (PA)" link="https://github.com/JasnRathore/project-aliaser" 
+					description="CLI Tool That Allows you to alias folder/proj locations to quickly navigate to them"
+					>
+					<PowerShellLogo />
+					<GOLogo />
+					<SqliteLogo />
+				</ProjectItem>
 				<ProjectItem title="JCommandChain (JCC)" link="https://github.com/JasnRathore/JCommandChain" 
 					description="CLI Tool That Allows you to alias Commands/scripts or run multiple of them concurrently"
 					>
