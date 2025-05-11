@@ -3,7 +3,7 @@ import { ThemeContext } from "../context";
 import { NavLink } from "react-router";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import ProjectItem from "../components/gallery_item";
-import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, NEXTJSLogo, PowerShellLogo, PYLogo, ReactLogo, RSLogo, SqliteLogo, SupabaseLogo, TailwindLogo, TSLogo } from "../components/logos";
+import { CPPLogo, GOLogo, JSLogo, MYSQLLogo, NEXTJSLogo, PowerShellLogo, PYLogo, ReactLogo, RSLogo, SqliteLogo, SupabaseLogo, TailwindLogo, TSLogo, WakuLogo } from "../components/logos";
 
 export function GalleryPage() {
 	const theme = useContext(ThemeContext); 
@@ -24,6 +24,15 @@ export function GalleryPage() {
 			</div>
 			
 			<div className="flex flex-col gap-4 2xl:gap-6 ">
+				
+				
+				<ProjectItem title="Su-Fumi" link="https://sufumi.vercel.app/" 
+					description="A Venture focused on building CLI tools that accelerate developer &#10; workflows"
+					>
+					<TSLogo />
+					<TailwindLogo/>
+					<WakuLogo />
+				</ProjectItem>
 				
 				<ProjectItem title="GFG Club Site" link="https://gfgbvdoet.vercel.app/" 
 					description="Our Clubs website for keeping up with events, getting to know the team or looking at memories"

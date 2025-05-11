@@ -60,7 +60,10 @@ export function NodeLogo() {
 }
 export function FigmaLogo() {
 	return <img className="h-6 " src="./tech/Figma.svg" />
-	
+}
+
+export function WakuLogo() {
+	return <img className="h-6 " src="./tech/waku.png" />
 }
 
 
