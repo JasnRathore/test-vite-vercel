@@ -3,7 +3,7 @@ import { NavLink } from "react-router"
 export default function Gallery() {
 	return (
 		
-		<div className="p-8 2xl:p-14 flex flex-col items-center gap-4 2xl:gap-6 2xl:min-w-fit sm:gap-0 sm:justify-between xl:w-fit border bg-card border-border rounded-[30px] text-text">
+		<div className="p-8 transition-shadow duration-500 ease-in-out hover:shadow-lg 2xl:p-14 flex flex-col items-center gap-4 2xl:gap-6 2xl:min-w-fit sm:gap-0 sm:justify-between xl:w-fit border bg-card border-border rounded-[30px] text-text">
 			<span className="tracking-[3px] text-xl 2xl:text-2xl text-heading font-bold">
 				GALLERY
 			</span>
