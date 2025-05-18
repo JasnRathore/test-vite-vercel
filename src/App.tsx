@@ -6,6 +6,7 @@ import { useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import { GalleryPage } from "./pages/gallery_page";
 import { ErrorPage } from "./pages/error_page";
+import { DesignsPage } from "./pages/designs_page";
 
 function App() {
   const [Toggled, SetToggle] = useState(getMode());
@@ -14,9 +15,12 @@ function App() {
 	element: <HomePage />,
 	errorElement: <ErrorPage />,
 	},{
-		path: "/gallery",
+		path: "/projects",
 		element: <GalleryPage />
-	},
+	}, {
+			path: "/designs",
+		element: <DesignsPage/>
+		},
 	]);
 
   return (

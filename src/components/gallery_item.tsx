@@ -1,42 +1,62 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons"
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { ReactNode } from "react"
 
+
 interface ProjectItemInterface {
-	title: string
-	description: string
-	link: string
-	children?: ReactNode
+  title: string
+  description: string
+  link?: string
+  children?: ReactNode
+  featured?: boolean
 }
 
-export default function ProjectItem({
-	title,
-	description,	
-	link,
-	children	
+export function ProjectItem({
+  title,
+  description,  
+  link,
+  children,
+  featured = false
 }: ProjectItemInterface) {
-	
-	return (
-		<div className="px-6 2xl:px-8 py-4 2xl:py-6 bg-card border items-center flex flex-col sm:flex-row gap-6 2xl:gap-8 justify-between  border-border rounded-[20px]">
-			<div className="flex flex-col gap-1 2xl:gap-3 w-full">
-			<div className="flex flex-row justify-between">
-				<span className="tracking-[3px] text-md lg:text-xl 2xl:text-2xl text-heading font-bold">
-					{ title }
-				</span>		
-				<div className="hidden md:flex flex-row gap-2 items-center">
-						 { children }
-				</div>
-			</div>
-			<span className="text-md lg:text-xl 2xl:text-2xl ">
-				{ description }
-			</span>		
-			</div>
-			<a href={link} target="_blank" className="hidden sm:flex">
-			<ExternalLinkIcon className="size-6 md:size-10 2xl:size-12" />
-			</a>
-			<a href={link} target="_blank" className="sm:hidden flex flex-row items-center gap-2">
-				Visit
-			<ExternalLinkIcon className="size-4" />
-			</a>
-		</div>
-	)
+  
+  return (
+    <div className={`
+      relative p-6 2xl:p-8 bg-card border border-border rounded-xl 
+      hover:border-accent transition-all duration-200
+      ${featured ? 'border-2 border-accent' : ''}
+      h-full flex flex-col
+    `}>
+      <div className="flex flex-col h-full">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-xl lg:text-2xl font-bold text-heading tracking-tight">
+            {title}
+          </h3>
+          <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted hover:text-accent transition-colors"
+            aria-label={`Visit ${title} project`}
+          >
+            <ExternalLinkIcon className="size-5" />
+          </a>
+        </div>
+        
+        <p className="text-muted mb-6 flex-grow">
+          {description}
+        </p>
+        
+        {children && (
+          <div className="mt-auto">
+            <div className="border-t border-border pt-4">
+              <h4 className="text-sm text-muted mb-2">Technologies:</h4>
+              <div className="flex flex-wrap gap-3">
+                {children}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
 }
+

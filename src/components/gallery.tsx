@@ -7,8 +7,11 @@ export default function Gallery() {
 			<span className="tracking-[3px] text-xl 2xl:text-2xl text-heading font-bold">
 				GALLERY
 			</span>
-			<NavLink to="/gallery" className="2xl:text-2xl flex flex-row items-center justify-center py-2 px-2.5 w-full 2xl:w-fit bg-foreground rounded-[10px]">
-				View Works
+			<NavLink to="/projects" className="2xl:text-2xl sm:my-2 flex flex-row items-center justify-center py-1 px-1.5 w-full 2xl:w-fit bg-foreground rounded-[10px]">
+				Projects
+			</NavLink>
+			<NavLink to="/designs" className="2xl:text-2xl flex flex-row items-center justify-center py-1 px-1.5 w-full 2xl:w-fit bg-foreground rounded-[10px]">
+				Designs
 			</NavLink>
 			
 		</div>
